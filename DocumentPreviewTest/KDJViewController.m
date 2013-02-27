@@ -8,22 +8,25 @@
 
 #import "KDJViewController.h"
 
-@interface KDJViewController ()
-
-@end
-
 @implementation KDJViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationItem.title = @"Document Preview Test";
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)previewButtonWasTapped:(id)sender {
+    NSURL *sampleFileURL = [[NSBundle mainBundle] URLForResource:@"SampleFile" withExtension:@"rtf"];
+    
+    UIDocumentInteractionController *controller = [UIDocumentInteractionController interactionControllerWithURL:sampleFileURL];
+    controller.delegate = self;
+    
+    [controller presentPreviewAnimated:YES];
+}
+
+- (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller {
+    return self.navigationController;
 }
 
 @end

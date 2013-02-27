@@ -17,8 +17,8 @@
 		4EDDA5C316DE357800251E85 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDDA5C216DE357800251E85 /* Default@2x.png */; };
 		4EDDA5C516DE357800251E85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDDA5C416DE357800251E85 /* Default-568h@2x.png */; };
 		4EDDA5C816DE357800251E85 /* KDJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDA5C716DE357800251E85 /* KDJViewController.m */; };
-		4EDDA5CB16DE357800251E85 /* KDJViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EDDA5C916DE357800251E85 /* KDJViewController_iPhone.xib */; };
-		4EDDA5CE16DE357800251E85 /* KDJViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EDDA5CC16DE357800251E85 /* KDJViewController_iPad.xib */; };
+		4EDDA5CB16DE357800251E85 /* KDJViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EDDA5C916DE357800251E85 /* KDJViewController.xib */; };
+		4EDDA5D516DE369700251E85 /* SampleFile.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4EDDA5D416DE369700251E85 /* SampleFile.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +37,8 @@
 		4EDDA5C416DE357800251E85 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4EDDA5C616DE357800251E85 /* KDJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDJViewController.h; sourceTree = "<group>"; };
 		4EDDA5C716DE357800251E85 /* KDJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDJViewController.m; sourceTree = "<group>"; };
-		4EDDA5CA16DE357800251E85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KDJViewController_iPhone.xib; sourceTree = "<group>"; };
-		4EDDA5CD16DE357800251E85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KDJViewController_iPad.xib; sourceTree = "<group>"; };
+		4EDDA5CA16DE357800251E85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KDJViewController.xib; sourceTree = "<group>"; };
+		4EDDA5D416DE369700251E85 /* SampleFile.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = SampleFile.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +89,7 @@
 				4EDDA5BE16DE357800251E85 /* KDJAppDelegate.m */,
 				4EDDA5C616DE357800251E85 /* KDJViewController.h */,
 				4EDDA5C716DE357800251E85 /* KDJViewController.m */,
-				4EDDA5C916DE357800251E85 /* KDJViewController_iPhone.xib */,
-				4EDDA5CC16DE357800251E85 /* KDJViewController_iPad.xib */,
+				4EDDA5C916DE357800251E85 /* KDJViewController.xib */,
 				4EDDA5B516DE357800251E85 /* Supporting Files */,
 			);
 			path = DocumentPreviewTest;
@@ -106,6 +105,7 @@
 				4EDDA5C016DE357800251E85 /* Default.png */,
 				4EDDA5C216DE357800251E85 /* Default@2x.png */,
 				4EDDA5C416DE357800251E85 /* Default-568h@2x.png */,
+				4EDDA5D416DE369700251E85 /* SampleFile.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -166,8 +166,8 @@
 				4EDDA5C116DE357800251E85 /* Default.png in Resources */,
 				4EDDA5C316DE357800251E85 /* Default@2x.png in Resources */,
 				4EDDA5C516DE357800251E85 /* Default-568h@2x.png in Resources */,
-				4EDDA5CB16DE357800251E85 /* KDJViewController_iPhone.xib in Resources */,
-				4EDDA5CE16DE357800251E85 /* KDJViewController_iPad.xib in Resources */,
+				4EDDA5CB16DE357800251E85 /* KDJViewController.xib in Resources */,
+				4EDDA5D516DE369700251E85 /* SampleFile.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,20 +195,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		4EDDA5C916DE357800251E85 /* KDJViewController_iPhone.xib */ = {
+		4EDDA5C916DE357800251E85 /* KDJViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4EDDA5CA16DE357800251E85 /* en */,
 			);
-			name = KDJViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		4EDDA5CC16DE357800251E85 /* KDJViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4EDDA5CD16DE357800251E85 /* en */,
-			);
-			name = KDJViewController_iPad.xib;
+			name = KDJViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

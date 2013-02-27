@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KDJViewController : UIViewController
+@interface KDJViewController : UIViewController <UIDocumentInteractionControllerDelegate>
+
+- (IBAction)previewButtonWasTapped:(id)sender;
 
 @end
